@@ -85,7 +85,7 @@ html {
     background-image: url("https://64.media.tumblr.com/bb9f7374b83eb45593af09674b5f80d2/tumblr_ohnkedIuJ61r0w3wvo1_1280.png");
     background-repeat: no-repeat;
     background-position-y: -10vw;
-    background-size: auto;
+    background-size: cover;
 }
 #Text-0 {
     position: absolute;
