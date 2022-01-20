@@ -1,0 +1,131 @@
+html {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root {
+    --color-main : #222222;
+    --color-button : rgb(255, 0, 0);
+}
+
+.box {
+    position: relative;
+    display: block;
+    background-color: var(--color-main);
+}
+
+#heading {
+    width: 100vw;
+    height: 80px;
+}
+
+#text-Harry {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#button1
+{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 8px;
+    font-size: 12px;
+    color: white;
+}
+.button:hover {
+    background-color: rgb(255, 0, 0);
+}
+#button2
+{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    display: block;
+    right: 150px;
+    top: 8px;
+    font-size: 12px;
+    color: white;
+}
+#button3
+{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    display: block;
+    right: 280px;
+    top: 8px;
+    font-size: 12px;
+    color: white;
+}
+#button4
+{
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    background-color: var(--color-button);
+    display: block;
+    right: 390px;
+    top: 8px;
+    font-size: 12px;
+    color: white;
+}
+
+.image-box {
+    position: relative;
+    display: block;
+}
+#image-henry-bergkamp {
+    position: absolute;
+    display: block;
+    width: 50vw;
+    height: 100vh;
+    background-image: url("https://64.media.tumblr.com/bb9f7374b83eb45593af09674b5f80d2/tumblr_ohnkedIuJ61r0w3wvo1_1280.png");
+    background-repeat: no-repeat;
+    background-position-y: -10vw;
+    background-size: auto;
+}
+#Text-0 {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+}
+#box2 {
+    position: absolute;
+    display: block;
+    left: 55vw;
+    top: auto;
+}
+#The-gunner {
+    font-size: 80px;
+}
+#The-gunner::first-letter {
+    color: var(--color-button);
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 40px;
+    padding-right: 60px; 
+}
+#box-last
+{
+    position: absolute;
+    display: block;
+    bottom: -100px;
+    right: 10px;
+}
+#box-3 {
+    position: absolute;
+    display: block;
+    bottom: -10px;
+    right: 2vw;
+}
+#line-last {
+    width: 30vw;
+    height: 2px;
+    background-color: #222222;
+}
