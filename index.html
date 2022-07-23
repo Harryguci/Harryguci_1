@@ -1,40 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Harryguci</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dành cho các sỹ tử</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      background-color: rgb(255, 220, 226);
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .frame {
+      display: block;
+      width: 80%;
+      max-width: 500px;
+      height: fit-content;
+      min-height: 200px;
+      background-color: white;
+      border-radius: 20px;
+      color: rgb(51, 51, 51);
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .heading {
+      display: block;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+    }
+    .frame h2 {
+      margin-top: 20px;
+      position: relative;
+      font-size: 30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #Fr1 {
+      padding: 15px 0;
+    }
+    .In {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+    }
+    .In input {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      outline: none;
+      border: whitesmoke 10px solid;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      zoom: 1.5;
+    }
+    .But {
+      margin-top: 25px;
+      border: none;
+      outline: none;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 20px;
+    }
+    .But:hover {
+      background-color: rgb(220, 220, 220);
+    }
+    #Fr2 {
+      opacity: 0;
+      padding: 20px 30px;
+    }
+    #Fr2 h2 {
+      font-size: 50px;
+      color: rgb(255, 82, 82);
+    }
+    p {
+     line-height: 1.75; 
+    }
+    .note {
+      color: rgb(255, 82, 82);
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="box", id="heading">
-        <h1 id="text-Harry">HARRYGUCI</h1>
+  <div id="Fr2" class="frame center">
+    <h2>Chúc mừng !!</h2>
+    <p>Dẫu kết quả hôm nay có ra sao.
+      Thì hãy nhớ rằng cậu đã là một <span class="note">chiến binh</span> tuyệt vời nhất.
+      Vậy nên không cần phải so sánh với bất kỳ ai, chiến thắng bản thân mình
+      mới là điều tuyệt vời nhất. Chúc mừng thành công ngày hôm nay.
+    </p>
+    <p>Và chúc cậu thành công trên con đường mới !!</p>
+  </div>
+
+  <div class="frame center" id="Fr1">
+    <div class="heading">
+      <h2>Nhập số báo danh</h2>
     </div>
-    <div class="button", id="button1">
-        <h1>About Me</h1>
+    <div class="In">
+      <input id="textIn" type="text">
     </div>
-    <div class="button", id="button2">
-        <h1>Contact</h1>
-    </div>
-    <div class="button", id="button3">
-        <h1>Photo</h1>
-    </div>
-    <div class="button", id="button4">
-        <h1>HOME</h1>
-    </div>
-    <div class="image-box"">
-        <div id="Text-0">
-            <div id="image-henry-bergkamp"></div>
-        </div>
-    </div>
-    <div id="box2">
-        <h1 id="The-gunner">THE GUNNER</h1>
-        <p>Arsenal Football Club is a professional football club based in Islington, London, England. Arsenal plays in the Premier League, the top flight of English football. The club has won 13 league titles (including one unbeaten title), a record 14 FA Cups, two League Cups, 16 FA Community Shields, the League Centenary Trophy, one European Cup Winners' Cup, and one Inter-Cities Fairs Cup.</p>
-    </div>
-    <div id="box-3">
-        <div id="line-last"></div>
-    </div>
-    <div id="box-last">
-       <p>Design By Harryguci</p>
-    </div>
+    <button class="But" type="button" onclick="Handle()"><strong>Tra cứu</strong></button>
+    <script>
+      function Handle() {
+        var element_fr1 = document.getElementById("Fr1");
+        var nameElement = document.getElementById("textIn");
+        var element_fr2 = document.getElementById("Fr2");
+        element_fr1.style.opacity = '0%';
+        element_fr2.style.opacity = '100%';
+      }
+    </script>
+  </div>
 </body>
+
 </html>
