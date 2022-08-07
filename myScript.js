@@ -13,3 +13,21 @@ function closeMessage() {
     mess_element.style.display = 'none';
    }, 500);
 }
+
+
+function Open_Menu() {
+  var backgroundElement = document.getElementById('dark-scr-op2');
+  var menuElement = document.getElementById('contai-op2');
+  backgroundElement.style.display = 'block';
+  menuElement.style.display = 'block';
+  menuElement.style.left = '0';
+}
+function Close_Menu() {
+  var backgroundElement = document.getElementById('dark-scr-op2');
+  var menuElement = document.getElementById('contai-op2');
+  backgroundElement.style.display = 'none';
+  menuElement.style.left = '-100%';
+  setTimeout(function() {
+    menuElement.display = 'none';
+  }, 300)
+}
